@@ -19,6 +19,7 @@
 """
 
 from __future__ import division
+from past.builtins import long
 
 from ..utils import unique_rows, generate_set_partitions, UniformJointPrior, \
                     ProductJointPrior, IndependentJointPrior, powerset, MaskedBounds

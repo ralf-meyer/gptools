@@ -672,7 +672,7 @@ class IndependentJointPrior(JointPrior):
         hyperparameters or a frozen instance of a distribution from
         :py:mod:`scipy.stats`.
     """
-    def __init__(self, univariate_priors):
+    def __init__(self, univariate_priors, **kwargs):
         super(IndependentJointPrior, self).__init__(**kwargs)
         self.univariate_priors = univariate_priors
     

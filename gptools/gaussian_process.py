@@ -751,7 +751,7 @@ class GaussianProcess(object):
             print(res_min)
             print("\nLL\t%.3g" % (-1 * res_min.fun))
             for v, l in zip(res_min.x, self.free_param_names):
-                print("%s\t%.3g" % (l.translate(None, '\\'), v))
+                print("%s\t%.3g" % (l.strip('\\'), v))
         if not res_min.success:
             warnings.warn(
                 "Optimizer %s reports failure, selected hyperparameters are "
